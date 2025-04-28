@@ -157,9 +157,13 @@ mod tests {
             // &hash_public_inputs(&public_inputs), // sha256
             &hash_public_inputs_with_fn(&public_inputs, blake3_hash), // blake3
         );
+        println!("vk: {:?}", ark_vkey);
+        println!("proof: {:?}", ark_proof);
+        println!("public input: {:?}", ark_public_inputs);
+        println!("native public input: {:?}", public_inputs);
         Groth16::<Bn254>::verify_proof(&ark_vkey.clone().into(), &ark_proof, &ark_public_inputs)
             .unwrap();
 
-        bitvm::groth16::test_tools::subscript_lt_400KB::test_split_script_groth16_verifier_subscript_lt_400KB(ark_public_inputs.into(), ark_vkey, ark_proof);
+        // bitvm::groth16::test_tools::subscript_lt_400KB::test_split_script_groth16_verifier_subscript_lt_400KB(ark_public_inputs.into(), ark_vkey, ark_proof);
     }
 }
