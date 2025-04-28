@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "lib",
+    "program",
+    "script",
+]
+resolver = "2"
+
+[workspace.dependencies]
+alloy-sol-types = "1.0"
+bitvm = { git = "ssh://git@github.com/fiamma-chain/BitVM.git", package = "bitvm", branch = "main" }
+
+[patch.crates-io]
+ark-ff = { git = "https://github.com/fiamma-chain/algebra", branch = "bitvm" }
+ark-ec = { git = "https://github.com/fiamma-chain/algebra", branch = "bitvm" }
+ark-serialize = { git = "https://github.com/fiamma-chain/algebra", branch = "bitvm" }
+ark-poly = { git = "https://github.com/fiamma-chain/algebra", branch = "bitvm" }
