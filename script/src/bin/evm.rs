@@ -164,6 +164,12 @@ mod tests {
         Groth16::<Bn254>::verify_proof(&ark_vkey.clone().into(), &ark_proof, &ark_public_inputs)
             .unwrap();
 
-        // bitvm::groth16::test_tools::subscript_lt_400KB::test_split_script_groth16_verifier_subscript_lt_400KB(ark_public_inputs.into(), ark_vkey, ark_proof);
+        let raw_inputs = public_inputs
+            .into_iter()
+            .map(|i| i as u32)
+            .collect::<Vec<_>>();
+        bitvm::groth16::test_tools::subscript_lt_400KB::test_split_script_groth16_verifier_subscript_check_with_blake3_lt_400KB(
+            ark_public_inputs.into(), ark_vkey, ark_proof,&raw_inputs
+        );
     }
 }

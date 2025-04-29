@@ -1108,7 +1108,7 @@ dependencies = [
 [[package]]
 name = "bitvm"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#7da0e090c5187cc3ff09cae10c6bc6a38fc5b77d"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
 dependencies = [
  "anyhow",
  "ark-bn254",
@@ -1129,7 +1129,7 @@ dependencies = [
 [[package]]
 name = "bitvm-scripts"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#7da0e090c5187cc3ff09cae10c6bc6a38fc5b77d"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
 dependencies = [
  "anyhow",
  "ark-bn254",
@@ -1162,13 +1162,15 @@ dependencies = [
 [[package]]
 name = "bitvm-witness"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#7da0e090c5187cc3ff09cae10c6bc6a38fc5b77d"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
 dependencies = [
  "ark-bn254",
  "ark-ec",
  "ark-ff 0.4.2",
  "ark-groth16",
  "ark-serialize 0.4.2",
+ "arrayref",
+ "blake3",
  "num-bigint 0.4.6",
  "num-traits",
  "once_cell",
@@ -2011,7 +2013,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33d852cb9b869c2a9b3df2f71a3074817f01e1844f839a144f5fcef059a4eb5d"
 dependencies = [
  "libc",
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3012,7 +3014,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc2f4eb4bc735547cfed7c0a4922cbd04a4655978c09b54f1f7b228750664c34"
 dependencies = [
  "cfg-if",
- "windows-targets 0.52.6",
+ "windows-targets 0.48.5",
 ]
 
 [[package]]
@@ -4041,7 +4043,7 @@ dependencies = [
  "once_cell",
  "socket2",
  "tracing",
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -4432,7 +4434,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -5588,7 +5590,7 @@ dependencies = [
  "getrandom 0.3.2",
  "once_cell",
  "rustix",
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]

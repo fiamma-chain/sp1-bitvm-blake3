@@ -8,7 +8,7 @@ resolver = "2"
 
 [workspace.dependencies]
 alloy-sol-types = "1.0"
-bitvm = { git = "ssh://git@github.com/fiamma-chain/BitVM.git", package = "bitvm", branch = "main" }
+bitvm = { git = "ssh://git@github.com/fiamma-chain/BitVM.git", package = "bitvm", branch = "feat/add_blake_3_hash" }
 
 [patch.crates-io]
 ark-ff = { git = "https://github.com/fiamma-chain/algebra", branch = "bitvm" }
