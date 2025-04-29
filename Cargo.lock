@@ -1108,7 +1108,7 @@ dependencies = [
 [[package]]
 name = "bitvm"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#55dd98a4bae69dd819cc8ab7496435ce6865bd4d"
 dependencies = [
  "anyhow",
  "ark-bn254",
@@ -1129,7 +1129,7 @@ dependencies = [
 [[package]]
 name = "bitvm-scripts"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#55dd98a4bae69dd819cc8ab7496435ce6865bd4d"
 dependencies = [
  "anyhow",
  "ark-bn254",
@@ -1162,7 +1162,7 @@ dependencies = [
 [[package]]
 name = "bitvm-witness"
 version = "0.1.0"
-source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=feat%2Fadd_blake_3_hash#aa827787642001b27aa709ff95df0e43a647ecdb"
+source = "git+ssh://git@github.com/fiamma-chain/BitVM.git?branch=main#55dd98a4bae69dd819cc8ab7496435ce6865bd4d"
 dependencies = [
  "ark-bn254",
  "ark-ec",
